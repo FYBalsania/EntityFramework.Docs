@@ -1733,7 +1733,7 @@ The type used for query results can contain common mapping constructs supported 
 [!code-csharp[BlogPost](../../../../samples/core/Miscellaneous/NewInEFCore8/RawSqlSample.cs?name=BlogPost)]
 
 > [!NOTE]
-> Types used in this way do not have keys defined and cannot have relationships to other types. Types with relationships must be mapped in the model.
+> Types used in this way cannot have keys and relationships to other types. Types with relationships must be mapped in the model.
 
 The type used must have a property for every value in the result set, but do not need to match any table in the database. For example, the following type represents only a subset of information for each post, and includes the blog name, which comes from the `Blogs` table:
 
